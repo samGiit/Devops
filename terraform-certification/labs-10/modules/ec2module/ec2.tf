@@ -24,7 +24,7 @@ resource "aws_instance" "mytestec2" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = file("path of your .pem file")
+    private_key = file("")
     host        = self.public_ip
   }
 }

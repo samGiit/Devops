@@ -1,16 +1,16 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "your access-key"
-  secret_key = "your secret-key"
+  access_key = ""
+  secret_key = ""
 }
 ## create your own bucket on aws  before using this code
 terraform {
   backend "s3" {
     bucket = "terraform-backend-files-sam" # put your bucket name
-    key =   "demo.tfstate"
+    key =   ""
     region     = "us-east-1"
-    access_key = "your access-key"
-    secret_key = "your secret-key"
+    access_key = ""
+    secret_key = ""
   }
 }
 module "ec2" {
