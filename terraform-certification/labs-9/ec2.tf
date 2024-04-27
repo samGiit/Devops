@@ -7,7 +7,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "terraform-backend-files-sam" # put your bucket name
-    key =   "demo.tfstate"
+    key =   ""
     region     = "us-east-1"
     access_key = ""
     secret_key = " "
