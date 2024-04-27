@@ -9,8 +9,8 @@ terraform {
     bucket = "terraform-backend-files-sam" # put your bucket name
     key =   "demo.tfstate"
     region     = "us-east-1"
-    access_key = "AKIAQ5ZDAAUIAVLS6G77"
-    secret_key = "TxBq96N2dxFpSnJkgaaGP0Jcy3+CROqS3brzm9om"
+    access_key = ""
+    secret_key = " "
   }
 }
 resource "aws_eip_association" "eip_assoc" {
@@ -70,7 +70,7 @@ resource "aws_instance" "mytestec2" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = file("./devops-sam.pem")
+    private_key = file(" ")
     host        = self.public_ip
   }
 }
