@@ -4,14 +4,15 @@
 *.tfstate.lock.info
 *planfile
 *terraform.tfstate
-
+presentation.pdf
 # logs
 *.log
 
 # Directories
 .terraform/
-.vagrant-labs/
+.vagrant
  terraform-provider-aws 
+__pycache__/
 
 # SSH Keys
 *.pem
@@ -19,8 +20,6 @@
 # Backup files
 *.bak
 
-# Ignored Terraform files
-*gitignore*.tf
 
 
 # Ignored vscode files
